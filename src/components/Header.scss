@@ -1,0 +1,87 @@
+@use '../styles/var.scss' as *;
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &__top {
+        border-bottom: 1px solid #e9e9eb;
+        height: 50px;
+    }
+    &__social-icons {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    &__calls {
+        // max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+    &__callme {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        //temp
+        border-bottom: 1px solid red;
+    }
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+    &__nav-link {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 19px;
+        color: $light-black;
+        text-transform: uppercase;
+    }
+    &__request {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    &__search-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+    &__request-btn {
+        padding: 12px 20px;
+        background-color: $yellow;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #fff;
+    }
+}
+.social-icon,
+.call-icon {
+    width: 15px;
+    height: 15px;
+}
+.phone-number {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}

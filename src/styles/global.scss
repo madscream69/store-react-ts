@@ -1,0 +1,45 @@
+@use 'var' as *;
+.container {
+    width: 100%;
+    height: fit-content;
+    padding: 0 120px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+}
+.main,
+.about {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}
+.white-btn {
+    display: block;
+    padding: 18px 27px;
+    background-color: #ffffff;
+    color: $black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid $yellow;
+    border-radius: 5px;
+    width: fit-content;
+}
+.yellow-btn {
+    display: block;
+    padding: 18px 27px;
+    background-color: $yellow;
+    border: 2px solid $yellow;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: fit-content;
+}

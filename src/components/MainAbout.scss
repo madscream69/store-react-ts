@@ -1,0 +1,99 @@
+@use '../styles/var.scss' as *;
+.about {
+    &__hat {
+        width: 100%;
+        height: 420px;
+        background-image: url('../assets/main/about.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__hat-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 75px 0 64px 0;
+        gap: 25px;
+    }
+    &__hat-title {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 66px;
+        color: #ffffff;
+    }
+    &__hat-text {
+        max-width: 480px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+    &__presentation {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__grey {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    &__grey-dot {
+        width: 4px;
+        height: 4px;
+        background-color: $grey;
+        border-radius: 50%;
+    }
+    &__grey-text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $grey;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 55px;
+        &--short {
+            max-width: 700px;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 700px;
+        margin: 25px 0 50px 0;
+    }
+    &__presentation-btns {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    &__presentation-image,
+    &__presentation-img {
+        width: 100%;
+    }
+    //CARDS
+    &__cards {
+        margin-top: 120px;
+        margin-bottom: 100px;
+        & > h2 {
+            margin-bottom: 50px;
+        }
+    }
+}
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.grid-card {
+    border-radius: 14px;
+    background-color: $dark-blue;
+    padding: 48px 0 0 48px;
+    min-height: 325px;
+}

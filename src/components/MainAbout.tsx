@@ -60,7 +60,7 @@ function MainAbout() {
                             <h6 className="grid-card__title">
                                 Миссия компании:
                             </h6>
-                            <p className="grid-card__text">
+                            <p className="grid-card__text p-r-68">
                                 Максимальное содействие росту
                                 производительности, эффективности и безопасности
                                 труда, повышению​ конкурентоспособности
@@ -71,16 +71,16 @@ function MainAbout() {
                             <h6 className="grid-card__title">
                                 Наш продукт / услуга
                             </h6>
-                            <p className="grid-card__text">
+                            <p className="grid-card__text p-r-36">
                                 Обеспечиваем надежное снабжение пневматическим
                                 оборудованием, компонентами и приборами КИПиА
                                 промышленные предприятия различных отраслей
                                 России.
                             </p>
                         </div>
-                        <div className="grid-card">
+                        <div className="grid-card grid-card--yellow">
                             <h6 className="grid-card__title">Наша цель:</h6>
-                            <p className="grid-card__text">
+                            <p className="grid-card__text p-r-16">
                                 Сосредоточение в одном месте широкого
                                 ассортимента пневматического оборудования и
                                 приборов КИПиА, продвижение новых брендов

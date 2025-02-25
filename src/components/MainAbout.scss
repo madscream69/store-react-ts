@@ -94,6 +94,40 @@
 .grid-card {
     border-radius: 14px;
     background-color: $dark-blue;
-    padding: 48px 0 0 48px;
+    padding: 48px 0 48px 48px;
     min-height: 325px;
+    &--yellow {
+        background-color: $yellow;
+    }
+    &--background {
+        background-image: url('../assets/main/windturbo.jpg');
+        background-position: 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 32px;
+        color: $white;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $white;
+    }
+    &:nth-child(1) {
+        clip-path: polygon(0 0, 100% 0, 100% 87%, 95% 100%, 0 100%);
+    }
+    &:nth-child(2) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 87%);
+    }
+    &:nth-child(3) {
+        clip-path: polygon(0 0, 95% 0, 100% 13%, 100% 100%, 0 100%);
+    }
+    &:nth-child(4) {
+        clip-path: polygon(0 13%, 5% 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
